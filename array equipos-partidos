@@ -1,0 +1,12 @@
+$equipos = [
+    "Barcelona", "Sevilla", "R.Madrid", "Cadiz", "At.Madrid",
+    "Villareal", "Eibar", "Granada", "Espanyol", "Rayo Vall",
+    "Celta", "Depor", "Valencia", "Getafe"
+];
+shuffle($equipos);
+
+
+$partidos = [];
+for ($i = 0; $i < count($equipos); $i += 2) {
+    $partidos[] = [$equipos[$i], $equipos[$i + 1]];
+}
