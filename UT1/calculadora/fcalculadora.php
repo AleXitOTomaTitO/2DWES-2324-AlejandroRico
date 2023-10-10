@@ -25,7 +25,7 @@
         <article>
             <div>
                 <h1>CALCULADORA</h1>
-                <form name="formu" method="post" action="fcalculadora.php">
+                <form name="formu" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <label for="op1">Operando 1</label>
                     <input type="number" name="op1">
                     <br><br>
